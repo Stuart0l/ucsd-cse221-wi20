@@ -1,0 +1,32 @@
+H/W path          Device      Class          Description
+========================================================
+/0/0                          memory         64KiB BIOS
+/0/400/700                    memory         1536KiB L1 cache
+/0/400/701                    memory         24MiB L2 cache
+/0/400/702                    memory         35MiB L3 cache
+/0/1000                       memory         32GiB System Memory
+/0/1000/0                     memory         32GiB DIMM DDR4 Synchronous Registered (Buffered) 2933 MHz (0.3 ns)
+/0/1000/1                     memory         [empty]
+/0/1000/2                     memory         [empty]
+/0/1000/3                     memory         [empty]
+/0/1000/4                     memory         [empty]
+/0/1000/5                     memory         [empty]
+/0/1000/6                     memory         [empty]
+/0/1000/7                     memory         [empty]
+/0/1000/8                     memory         [empty]
+/0/1000/9                     memory         [empty]
+/0/1000/a                     memory         [empty]
+/0/1000/b                     memory         [empty]
+/0/1000/c                     memory         [empty]
+/0/1000/d                     memory         [empty]
+/0/1000/e                     memory         [empty]
+/0/1000/f                     memory         [empty]
+/0/1000/10                    memory         [empty]
+/0/1000/11                    memory         [empty]
+/0/1000/12                    memory         [empty]
+/0/1000/13                    memory         [empty]
+/0/1000/14                    memory         [empty]
+/0/1000/15                    memory         [empty]
+/0/1000/16                    memory         [empty]
+/0/1000/17                    memory         [empty]
+/0/100/1f.2                   memory         Memory controller
