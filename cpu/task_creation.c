@@ -1,4 +1,4 @@
-#include "cpu.h"
+#include "../include/measure.h"
 #include "pthread.h"
 #include "sys/wait.h"
 

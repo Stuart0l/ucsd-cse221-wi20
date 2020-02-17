@@ -1,4 +1,4 @@
-#include "cpu.h"
+#include "../include/measure.h"
 
 #define LOAD_NUM 1000000
 #define LOG_SIZE_START 9

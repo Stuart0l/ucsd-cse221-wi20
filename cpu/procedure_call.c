@@ -1,4 +1,4 @@
-#include "cpu.h"
+#include "../include/measure.h"
 
 void f0() {}
 void f1(int a) {}
@@ -114,17 +114,9 @@ void procedure_overhead() {
 
 }
 
-void syscall_overhead() {
-    MEASURE_START();
-    getpid();
-    MEASURE_END();
-    printf("system call (getpid) overhead: %lf\n", (double)measure_time());
-}
-
 int main() {
 
 	procedure_overhead();
-	syscall_overhead();
 
 	return 0;
 }

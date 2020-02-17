@@ -1,4 +1,4 @@
-#include "cpu.h"
+#include "../include/measure.h"
 
 // Tests
 void cycle_time() {
