@@ -10,19 +10,26 @@ void f6(int a, int b, int c, int d, int e, int f) {}
 void f7(int a, int b, int c, int d, int e, int f, int g) {}
 
 void procedure_overhead() {
+    unsigned long long sum = 0;
 
     //zero parameter test
-    MEASURE_START();
-    for (int i = 0; i < LOOPS; i++) {
-        f0();
+    for (int j = 0; j < 10; j++) {
+        MEASURE_START();
+        for (int i = 0; i < LOOPS; i++) {
+            f0();f0();f0();f0();f0();
+            f0();f0();f0();f0();f0();
+        }
+        MEASURE_END();
+        sum += measure_time();
     }
-    MEASURE_END();
-    printf("average procedure call overhead (zero parameter): %lf\n", (double)measure_time() / LOOPS);
+    printf("average procedure call overhead (zero parameter): %lf\n", (double)sum / LOOPS / 10 / 10);
+    sum = 0;
 
     //one parameter test
     MEASURE_START();
     for (int i = 0; i < LOOPS; i++) {
-        f1(i);
+        f1(i);f1(i);f1(i);f1(i);f1(i);
+        f1(i);f1(i);f1(i);f1(i);f1(i);
     }
     MEASURE_END();
     printf("average procedure call overhead (one parameter): %lf\n", (double)measure_time() / LOOPS);
@@ -30,7 +37,8 @@ void procedure_overhead() {
     //two parameters test
     MEASURE_START();
     for (int i = 0; i < LOOPS; i++) {
-        f2(i, i);
+        f2(i, i);f2(i, i);f2(i, i);f2(i, i);f2(i, i);
+        f2(i, i);f2(i, i);f2(i, i);f2(i, i);f2(i, i);
     }
     MEASURE_END();
     printf("average procedure call overhead (two parameters): %lf\n", (double)measure_time() / LOOPS);
@@ -38,7 +46,8 @@ void procedure_overhead() {
     //three parameters test
     MEASURE_START();
     for (int i = 0; i < LOOPS; i++) {
-        f3(i, i, i);
+        f3(i, i, i);f3(i, i, i);f3(i, i, i);f3(i, i, i);f3(i, i, i);
+        f3(i, i, i);f3(i, i, i);f3(i, i, i);f3(i, i, i);f3(i, i, i);
     }
     MEASURE_END();
     printf("average procedure call overhead (three parameters): %lf\n", (double)measure_time() / LOOPS);
@@ -46,7 +55,8 @@ void procedure_overhead() {
     //four parameters test
     MEASURE_START();
     for (int i = 0; i < LOOPS; i++) {
-        f4(i, i, i, i);
+        f4(i, i, i, i);f4(i, i, i, i);f4(i, i, i, i);f4(i, i, i, i);f4(i, i, i, i);
+        f4(i, i, i, i);f4(i, i, i, i);f4(i, i, i, i);f4(i, i, i, i);f4(i, i, i, i);
     }
     MEASURE_END();
     printf("average procedure call overhead (four parameters): %lf\n", (double)measure_time() / LOOPS);
@@ -54,6 +64,15 @@ void procedure_overhead() {
     //five parameters test
     MEASURE_START();
     for (int i = 0; i < LOOPS; i++) {
+        f5(i, i, i, i, i);
+        f5(i, i, i, i, i);
+        f5(i, i, i, i, i);
+        f5(i, i, i, i, i);
+        f5(i, i, i, i, i);
+        f5(i, i, i, i, i);
+        f5(i, i, i, i, i);
+        f5(i, i, i, i, i);
+        f5(i, i, i, i, i);
         f5(i, i, i, i, i);
     }
     MEASURE_END();
@@ -63,6 +82,15 @@ void procedure_overhead() {
     MEASURE_START();
     for (int i = 0; i < LOOPS; i++) {
         f6(i, i, i, i, i, i);
+        f6(i, i, i, i, i, i);
+        f6(i, i, i, i, i, i);
+        f6(i, i, i, i, i, i);
+        f6(i, i, i, i, i, i);
+        f6(i, i, i, i, i, i);
+        f6(i, i, i, i, i, i);
+        f6(i, i, i, i, i, i);
+        f6(i, i, i, i, i, i);
+        f6(i, i, i, i, i, i);
     }
     MEASURE_END();
     printf("average procedure call overhead (six parameters): %lf\n", (double)measure_time() / LOOPS);
@@ -70,6 +98,15 @@ void procedure_overhead() {
     //seven parameters test
     MEASURE_START();
     for (int i = 0; i < LOOPS; i++) {
+        f7(i, i, i, i, i, i, i);
+        f7(i, i, i, i, i, i, i);
+        f7(i, i, i, i, i, i, i);
+        f7(i, i, i, i, i, i, i);
+        f7(i, i, i, i, i, i, i);
+        f7(i, i, i, i, i, i, i);
+        f7(i, i, i, i, i, i, i);
+        f7(i, i, i, i, i, i, i);
+        f7(i, i, i, i, i, i, i);
         f7(i, i, i, i, i, i, i);
     }
     MEASURE_END();
