@@ -45,7 +45,9 @@ void loop_overhead() {
 
 int main() {
 
-	cycle_time();
+    set_affinity();
+
+	// cycle_time();
     reading_overhead();
     loop_overhead();
 

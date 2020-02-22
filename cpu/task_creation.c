@@ -43,6 +43,7 @@ void thread_overhead() {
 }
 
 int main() {
+    set_affinity();
 	process_overhead();
     thread_overhead();
 	return 0;

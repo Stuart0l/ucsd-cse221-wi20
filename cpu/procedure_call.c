@@ -116,6 +116,8 @@ void procedure_overhead() {
 
 int main() {
 
+    set_affinity();
+
 	procedure_overhead();
 
 	return 0;

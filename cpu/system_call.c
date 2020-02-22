@@ -8,6 +8,7 @@ void syscall_overhead() {
 }
 
 int main() {
+    set_affinity();
     syscall_overhead();
     return 0;
 }

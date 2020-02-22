@@ -1,7 +1,9 @@
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdint.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <sched.h>
 
 #define LOOPS 1000
 
@@ -29,4 +31,14 @@ uint64_t measure_time() {
     end = ((uint64_t)cycles_high1 << 32) | cycles_low1;
     if (end < start) printf("ERROR: start-%lu, end-%lu\n", start, end);
     return end - start;
+}
+
+void set_affinity() {
+    cpu_set_t mask;
+    CPU_ZERO(&mask);
+    CPU_SET(0, &mask);
+    
+    if (sched_setaffinity(0, sizeof(mask), &mask) < 0) {
+        perror("sched_setaffinity");
+    }
 }

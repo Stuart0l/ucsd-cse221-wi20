@@ -66,6 +66,8 @@ void thread_switch_overhead() {
 }
 
 int main(int argc, char const *argv[]) {
+    set_affinity();
+    
     if (pipe(fd) != 0) {
         printf("failed to open the pipe\n");
         exit(0);
