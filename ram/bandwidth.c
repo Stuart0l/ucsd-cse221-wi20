@@ -18,6 +18,12 @@ void read_bandwidth() {
         exit(1);
     }
 
+    // warm up the cache
+    #pragma unroll
+    for (int j = 0; j < src_size / des_size; j++) {
+        memcpy(des, (const void *)&src[j * des_size], des_size);
+    }
+
     double results[NUM_OF_EXPERIMENTS];
     for (int i = 0; i < NUM_OF_EXPERIMENTS; i++) {
         MEASURE_START();
@@ -50,6 +56,12 @@ void write_bandwidth() {
     if (src == NULL || des == NULL) {
         printf("malloc failure\n");
         exit(1);
+    }
+
+    // warm up the cache
+    #pragma unroll
+    for (int j = 0; j < des_size / src_size; j++) {
+        memcpy((void *)&des[j * src_size], src, src_size);
     }
 
     double results[NUM_OF_EXPERIMENTS];

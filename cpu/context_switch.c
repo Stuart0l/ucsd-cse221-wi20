@@ -79,7 +79,10 @@ int main(int argc, char const *argv[]) {
         printf("------------------------------\n");
     }
 
-    process_switch_overhead();
+    for (int i = 0; i < 20; ++i) {
+	process_switch_overhead();
+	printf("------------------------------\n");
+    }
     thread_switch_overhead();
     return 0;
 }

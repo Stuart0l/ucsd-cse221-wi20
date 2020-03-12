@@ -8,27 +8,31 @@ with open("lat_mem.csv", "r") as f:
 	reader = csv.reader(f)
 	for row in reader:
 		stride.append(int(row[0]))
-		latency.append([float(t) * 0.4176717098689242 for t in row[1:-1]])  # convert cycles to ns
+		this_latency = []
+		for t in row[1:-1]:
+			if int(t) < 2000:
+				this_latency.append(int(t) * 0.4176717098689242)
+		latency.append(this_latency)  # convert cycles to ns
 
+ylim = [200, 200, 200, 200, 600, 600, 600, 600, 600, 600, 600, 600]
 late = np.asarray(latency)
-lgsz = np.arange(9, 30, 1)
-
 i = 0
 for lt in late:
-	lbl = "stride=" + str(stride[i])
-	plt.plot(lgsz, lt, label=lbl)
+	tlt = "stride=" + str(stride[i])
+	plt.subplot(6,2,i+1)
+	plt.ylim(0, ylim[i]) 
+	plt.xlim(0, 100000)
+	plt.plot(lt, 'b.')
+	plt.xticks(fontsize='x-small')
+	plt.yticks(fontsize='x-small', rotation=90)
+	plt.title(tlt, fontsize='x-small')
+	plt.ylabel("latency in ns", fontsize='x-small')
 	i+=1
+	if i >= 10:
+		break
 
-plt.xticks(lgsz)
-plt.xlabel("log2 array size")
-plt.ylabel("latency in ns")
-plt.legend()
-
-plt.annotate('L1 cache', (11, 1))
-plt.annotate('L2 cache', (16, 1.5))
-plt.annotate('L3 cache', (21, 4))
-plt.annotate('main mem', (26, 10))
-
-plt.savefig("lat_mem.pdf")
+plt.subplots_adjust(left=0, bottom=0, top=1, right=1)
+plt.tight_layout(pad=0)
+plt.savefig("lat_mem.png", dpi=300)
 
 pass

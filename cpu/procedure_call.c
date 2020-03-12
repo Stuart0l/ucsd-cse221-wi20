@@ -12,18 +12,19 @@ void f7(int a, int b, int c, int d, int e, int f, int g) {}
 void procedure_overhead() {
     unsigned long long sum = 0;
 
-    //zero parameter test
-    for (int j = 0; j < 10; j++) {
-        MEASURE_START();
-        for (int i = 0; i < LOOPS; i++) {
-            f0();f0();f0();f0();f0();
-            f0();f0();f0();f0();f0();
-        }
-        MEASURE_END();
-        sum += measure_time();
+   for (int i = 0; i < LOOPS; i++) {
+        f1(i);f1(i);f1(i);f1(i);f1(i);
+        f1(i);f1(i);f1(i);f1(i);f1(i);
     }
-    printf("average procedure call overhead (zero parameter): %lf\n", (double)sum / LOOPS / 10 / 10);
-    sum = 0;
+
+    //zero parameter test
+    MEASURE_START();
+    for (int i = 0; i < LOOPS; i++) {
+        f0();f0();f0();f0();f0();
+        f0();f0();f0();f0();f0();
+    }
+    MEASURE_END();
+    printf("average procedure call overhead (zero parameter): %lf\n", (double)measure_time() / LOOPS);
 
     //one parameter test
     MEASURE_START();
@@ -114,11 +115,43 @@ void procedure_overhead() {
 
 }
 
+void reading_overhead() {
+    uint64_t times[LOOPS];
+    double sum = 0;
+
+    for (int i = 0; i < LOOPS; i++) {
+        MEASURE_START();
+        MEASURE_END();
+        times[i] = measure_time();
+        sum += times[i];
+    }
+
+    printf("average overhead: %lf\n", sum / LOOPS);
+}
+
+void loop_overhead() {
+
+    unsigned long sum = 0;    
+    for (int i = 0; i < LOOPS; i++) {
+        MEASURE_START();
+        for (int i = 0; i < LOOPS; i++) {
+            //do nothing
+        }
+        MEASURE_END();
+        sum += measure_time();
+    }
+    
+
+    printf("average loop overhead: %lf\n", (double)sum / LOOPS);
+}
+
 int main() {
 
     set_affinity();
 
 	procedure_overhead();
+    reading_overhead();
+    loop_overhead();
 
 	return 0;
 }

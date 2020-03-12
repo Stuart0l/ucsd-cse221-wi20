@@ -1,22 +1,22 @@
-reading bandwidth: 9.542192GB/s
-reading bandwidth: 13.454549GB/s
-reading bandwidth: 13.482825GB/s
-reading bandwidth: 13.406069GB/s
-reading bandwidth: 13.452776GB/s
-reading bandwidth: 13.581394GB/s
-reading bandwidth: 13.539600GB/s
-reading bandwidth: 13.450927GB/s
-reading bandwidth: 13.473023GB/s
-reading bandwidth: 13.565479GB/s
-mean: 13.094883, stddev: 1.185415
-writing bandwidth: 8.242642GB/s
-writing bandwidth: 12.690011GB/s
-writing bandwidth: 9.825715GB/s
-writing bandwidth: 12.626980GB/s
-writing bandwidth: 12.484625GB/s
-writing bandwidth: 15.450327GB/s
-writing bandwidth: 15.527718GB/s
-writing bandwidth: 12.508064GB/s
-writing bandwidth: 15.428516GB/s
-writing bandwidth: 13.789367GB/s
-mean: 12.857397, stddev: 2.283906
+reading bandwidth: 13.483539GB/s
+reading bandwidth: 13.666194GB/s
+reading bandwidth: 13.653803GB/s
+reading bandwidth: 13.678936GB/s
+reading bandwidth: 13.672797GB/s
+reading bandwidth: 13.670305GB/s
+reading bandwidth: 13.577208GB/s
+reading bandwidth: 13.631293GB/s
+reading bandwidth: 13.653993GB/s
+reading bandwidth: 13.665103GB/s
+mean: 13.635317, stddev: 0.057872
+writing bandwidth: 10.833182GB/s
+writing bandwidth: 12.256938GB/s
+writing bandwidth: 13.132214GB/s
+writing bandwidth: 15.487351GB/s
+writing bandwidth: 13.933703GB/s
+writing bandwidth: 12.534545GB/s
+writing bandwidth: 15.362690GB/s
+writing bandwidth: 15.482741GB/s
+writing bandwidth: 15.485494GB/s
+writing bandwidth: 14.927039GB/s
+mean: 13.943590, stddev: 1.589778

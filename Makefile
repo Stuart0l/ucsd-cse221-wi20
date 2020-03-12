@@ -6,7 +6,7 @@ exec := $(src:%.c=%.out)
 all: $(exec)
 
 %.out: %.c
-	gcc -O0 $< -o $@ -pthread -I./include -lm
+	gcc -O3 $< -o $@ -pthread -I./include -lm
 
 clean:
 	rm $(exec)

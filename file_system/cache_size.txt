@@ -1,0 +1,10 @@
+file size: 100 MB, total access time: 14.503563 ms, average block access time: 0.580143
+file size: 200 MB, total access time: 32.913287 ms, average block access time: 0.658266
+file size: 400 MB, total access time: 66.406718 ms, average block access time: 0.664067
+file size: 800 MB, total access time: 133.591819 ms, average block access time: 0.667959
+file size: 1600 MB, total access time: 272.593953 ms, average block access time: 0.681485
+file size: 3200 MB, total access time: 540.557637 ms, average block access time: 0.675697
+file size: 6400 MB, total access time: 1086.952086 ms, average block access time: 0.679345
+file size: 12800 MB, total access time: 3720.285523 ms, average block access time: 1.162589
+file size: 25600 MB, total access time: 7823.551632 ms, average block access time: 1.222430
+file size: 51200 MB, total access time: 15462.328678 ms, average block access time: 1.207994

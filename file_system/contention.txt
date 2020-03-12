@@ -1,0 +1,67 @@
+The actual read data is 40MB
+
+Test for 1 processes
+<random read> file size: 1000MB, total time: 5.466592ms, average block reading time: 0.000547ms
+Test for 2 processes
+<random read> file size: 1000MB, total time: 6.738213ms, average block reading time: 0.000674ms
+<random read> file size: 1000MB, total time: 6.735307ms, average block reading time: 0.000674ms
+Test for 3 processes
+<random read> file size: 1000MB, total time: 7.018163ms, average block reading time: 0.000702ms
+<random read> file size: 1000MB, total time: 6.935683ms, average block reading time: 0.000694ms
+<random read> file size: 1000MB, total time: 7.076980ms, average block reading time: 0.000708ms
+Test for 4 processes
+<random read> file size: 1000MB, total time: 7.450984ms, average block reading time: 0.000745ms
+<random read> file size: 1000MB, total time: 7.480741ms, average block reading time: 0.000748ms
+<random read> file size: 1000MB, total time: 7.286268ms, average block reading time: 0.000729ms
+<random read> file size: 1000MB, total time: 8.171801ms, average block reading time: 0.000817ms
+Test for 5 processes
+<random read> file size: 1000MB, total time: 4.329455ms, average block reading time: 0.000433ms
+<random read> file size: 1000MB, total time: 4.156680ms, average block reading time: 0.000416ms
+<random read> file size: 1000MB, total time: 4.484851ms, average block reading time: 0.000448ms
+<random read> file size: 1000MB, total time: 7.911437ms, average block reading time: 0.000791ms
+<random read> file size: 1000MB, total time: 8.066934ms, average block reading time: 0.000807ms
+Test for 6 processes
+<random read> file size: 1000MB, total time: 5.465633ms, average block reading time: 0.000547ms
+<random read> file size: 1000MB, total time: 5.470421ms, average block reading time: 0.000547ms
+<random read> file size: 1000MB, total time: 5.821860ms, average block reading time: 0.000582ms
+<random read> file size: 1000MB, total time: 5.583486ms, average block reading time: 0.000558ms
+<random read> file size: 1000MB, total time: 6.064841ms, average block reading time: 0.000606ms
+<random read> file size: 1000MB, total time: 8.144567ms, average block reading time: 0.000814ms
+Test for 7 processes
+<random read> file size: 1000MB, total time: 7.692938ms, average block reading time: 0.000769ms
+<random read> file size: 1000MB, total time: 7.414230ms, average block reading time: 0.000741ms
+<random read> file size: 1000MB, total time: 7.702335ms, average block reading time: 0.000770ms
+<random read> file size: 1000MB, total time: 7.832112ms, average block reading time: 0.000783ms
+<random read> file size: 1000MB, total time: 7.933068ms, average block reading time: 0.000793ms
+<random read> file size: 1000MB, total time: 8.087923ms, average block reading time: 0.000809ms
+<random read> file size: 1000MB, total time: 9.956119ms, average block reading time: 0.000996ms
+Test for 8 processes
+<random read> file size: 1000MB, total time: 9.814603ms, average block reading time: 0.000981ms
+<random read> file size: 1000MB, total time: 10.323703ms, average block reading time: 0.001032ms
+<random read> file size: 1000MB, total time: 10.391873ms, average block reading time: 0.001039ms
+<random read> file size: 1000MB, total time: 10.433581ms, average block reading time: 0.001043ms
+<random read> file size: 1000MB, total time: 10.306708ms, average block reading time: 0.001031ms
+<random read> file size: 1000MB, total time: 10.570887ms, average block reading time: 0.001057ms
+<random read> file size: 1000MB, total time: 11.758227ms, average block reading time: 0.001176ms
+<random read> file size: 1000MB, total time: 11.574947ms, average block reading time: 0.001157ms
+Test for 9 processes
+<random read> file size: 1000MB, total time: 16.875846ms, average block reading time: 0.001688ms
+<random read> file size: 1000MB, total time: 17.167173ms, average block reading time: 0.001717ms
+<random read> file size: 1000MB, total time: 17.355275ms, average block reading time: 0.001736ms
+<random read> file size: 1000MB, total time: 17.895867ms, average block reading time: 0.001790ms
+<random read> file size: 1000MB, total time: 17.734621ms, average block reading time: 0.001773ms
+<random read> file size: 1000MB, total time: 17.672563ms, average block reading time: 0.001767ms
+<random read> file size: 1000MB, total time: 18.036196ms, average block reading time: 0.001804ms
+<random read> file size: 1000MB, total time: 17.991261ms, average block reading time: 0.001799ms
+<random read> file size: 1000MB, total time: 18.149126ms, average block reading time: 0.001815ms
+Test for 10 processes
+<random read> file size: 1000MB, total time: 20.321782ms, average block reading time: 0.002032ms
+<random read> file size: 1000MB, total time: 20.239748ms, average block reading time: 0.002024ms
+<random read> file size: 1000MB, total time: 19.803908ms, average block reading time: 0.001980ms
+<random read> file size: 1000MB, total time: 20.330656ms, average block reading time: 0.002033ms
+<random read> file size: 1000MB, total time: 19.972568ms, average block reading time: 0.001997ms
+<random read> file size: 1000MB, total time: 20.195461ms, average block reading time: 0.002020ms
+<random read> file size: 1000MB, total time: 20.292231ms, average block reading time: 0.002029ms
+<random read> file size: 1000MB, total time: 21.192738ms, average block reading time: 0.002119ms
+<random read> file size: 1000MB, total time: 20.182452ms, average block reading time: 0.002018ms
+<random read> file size: 1000MB, total time: 20.598540ms, average block reading time: 0.002060ms

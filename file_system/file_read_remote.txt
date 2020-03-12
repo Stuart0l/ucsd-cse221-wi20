@@ -1,0 +1,14 @@
+<seq read> file size: 100MB, total time: 5148.600548ms
+<seq read> file size: 200MB, total time: 10276.937565ms
+<seq read> file size: 400MB, total time: 20698.778793ms
+<seq read> file size: 800MB, total time: 41278.089192ms
+<seq read> file size: 1600MB, total time: 82382.063138ms
+<seq read> file size: 3200MB, total time: 165179.389788ms
+<seq read> file size: 6400MB, total time: 330406.756511ms
+<random read> file size: 100MB, total time: 5147.948402ms
+<random read> file size: 200MB, total time: 10485.269767ms
+<random read> file size: 400MB, total time: 20792.350435ms
+<random read> file size: 800MB, total time: 41247.303717ms
+<random read> file size: 1600MB, total time: 82398.863151ms
+<random read> file size: 3200MB, total time: 164412.026030ms
+<random read> file size: 6400MB, total time: 328680.353303ms
